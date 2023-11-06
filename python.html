@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylein.css">
+    <link rel="stylesheet" href="css/styleintab.css">
+    <link rel="stylesheet" href="css/styleinsuma.css">
+    <link rel="icon" type="image/jpg" href="img/rogo.png">
+    <title>長野工業高校情報工学班|Python</title>
+</head>
+<body>
+  <!--ヘッダー-->
+  <header>
+    <div class="header">
+      <h3><a href="home.html">長野工業高校</a></h3>
+      <h1><a href="home.html">情報工学班(試行版)</a></h1>
+    </div>
+  <div class="headermenu">
+  <nav>
+  <ul class="gnavi">
+    <li><a href="home.html"id="menutop" class="current">ホーム</a></li>
+    <li class="has-child"><a id="menutop">制作</a>
+      <ul>
+        <li class="has-child"><a>Python</a>
+          <ul>
+            <li><a href="python.html #padu">パズルゲーム</a></li>
+          </ul>
+        </li>
+        <li><a href="other.html">webサイト制作</a></li>
+      </ul>
+    </li>
+    <li class="has-child"><a id="menutop">イベント</a>
+      <ul>
+      <li><a href="syougakusei.html">小学生パソコン教室</a></li>
+      <li><a href="suc1.html">1年生スクラッチ講習会</a></li>
+      <li><a href="sangyofea2022.html">プログラミングゲーム体験会</a></li>
+      </ul>
+    </li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+  <div class="hanmenu">
+    <div class="openbtn1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu">
+      <details class="details js-details layer1">
+        <summary class="details-summary js-details-summary layer1"><a href="home.html">ホーム</a></summary>
+      </details>
+      <details class="details js-details layer1">
+        <summary class="details-summary js-details-summary layer1"><span class="btn"></span>制作</summary>
+        <div class="details-content js-details-content layer1">
+          <details class="details js-details layer2">
+            <summary class="details-summary js-details-summary layer2"><span class="btn"></span>Python</summary>
+            <div class="details-content js-details-content layer2">
+              <p class="details-content-item layer3"><a href="python.html#padu">パズルゲーム</a></p>
+            </div>
+          </details>
+          <details class="details js-details layer2">
+            <summary class="details-summary js-details-summary layer2"><span class="btn"></span>その他</summary>
+            <div class="details-content js-details-content layer2">
+              <p class="details-content-item layer3"><a href="other.html">webサイト制作</a></p>
+            </div>
+          </details>
+        </div>
+      </details>
+      <details class="details js-details layer1">
+        <summary class="details-summary js-details-summary layer1"><span class="btn"></span>イベント</summary>
+        <div class="details-content js-details-content layer1">
+          <p class="details-content-item layer3"><a href="syougakusei.html">小学生パソコン教室</a></p>
+          <p class="details-content-item layer3"><a href="suc1.html">1年生スクラッチ講習会</a></p>
+          <p class="details-content-item layer3"><a href="sangyofea2022.html">プログラミングゲーム体験会</a></p>
+        </div>
+      </details>
+    </div>
+    </div>
+  </div>
+    <div class="honbun">
+      <div class="content">
+        <div>
+          <h1><a id="padu">パズルゲーム</a></h1>
+          <img src="img/padu.png">
+          <video src="img/puzzle.mp4" controls></video>
+        </div>
+        <p>パズルゲームを作りました。十字キーでタイルを動かし、大きいサイズを作成していくゲームです。
+            プログラミング言語は、Python、GUIライブラリはTKinterを使ってます。データサイズを抑えるため、画面に出ている
+            数字をLog2した値で管理しています。(2→1,4→2,8→3...1024→10)</p>
+      </div>
+    </div>
+<div class="school">
+<a href="https://www.nagano-c.ed.jp/choko/"><img src="img/schoolrogo.png" height="40px"></a>
+</div>
+    
+<footer>
+    <p>Copyright ©  情報工学班 All Rights Reserved.</p>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+<script src="js/menu.js"></script>
+</html>
