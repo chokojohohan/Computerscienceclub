@@ -1,0 +1,248 @@
+@media only screen and (max-width: 480px) {
+  *{
+    margin: 0px;
+  }
+  main{
+    z-index: 90;
+  }
+  h2{
+    font-size: 24px;
+  }
+  .honbun img{
+    width: 100%;
+  }
+  .sumamenu{
+    display: flex;
+  }
+  .menu{
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background:#d3d3d3;
+  }
+  /*ヘッダー*/
+  header {
+    z-index: 2999;
+    width: 100%;
+    height: 50px; /* ヘッダーの高さを設定 */
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: table;
+    position: fixed;
+    background: #d3d3d3;
+  }
+  header h1{
+    font-size: 20px;
+  }
+  .header{
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .headermenu{
+    display: none;
+  }
+  header h1 a{
+    text-decoration:none;
+    color: #333;
+  }
+  header h3 a{
+    font-size: 12px;
+    text-decoration:none;
+    color: #333;
+  }
+  .hanmenu{
+    margin-top: 0px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  .menu{
+    z-index: 9990;
+    width: 100vw;
+    background-color: #d3d3d3;
+  }
+  .openbtn1{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    background-color: #d3d3d3;
+    width: 50px;
+    height: 50px;
+  }
+
+  /*ボタン内側*/
+  .openbtn1 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgb(0, 0, 0);
+    width: 45%;
+  }
+
+  .openbtn1 span:nth-of-type(1) {
+    top:15px; 
+  }
+
+  .openbtn1 span:nth-of-type(2) {
+    top:23px;
+  }
+
+  .openbtn1 span:nth-of-type(3) {
+    top:31px;
+  }
+
+  /*activeクラスが付与されると線が回転して×に*/
+
+  .openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn1.active span:nth-of-type(2) {
+    opacity: 0;/*真ん中の線は透過*/
+  }
+
+  .openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  .details-summary {
+    position: relative;
+    display: block;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .details-summary.layer1 {
+    background-color: #d3d3d3;
+  }
+
+  .details-summary.layer2 {
+    background-color: #979797;
+  }
+
+  .details-summary.layer3 {
+    background-color: #5c5c5c;
+  }
+
+  .details-summary:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .details-summary .btn {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 18px;
+    height: 18px;
+    transform-origin: center center;
+    transition-duration: 0.2s;
+  }
+
+  .details-summary .btn:before,
+  .details-summary .btn:after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    transform-origin: center center;
+  }
+
+  .details-summary .btn:before {
+    width: 4px;
+    height: 18px;
+    top: 0;
+    left: 7px;
+  }
+
+  .details-summary.is-active .btn {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  .details-summary.is-active .btn:before {
+    content: none;
+  }
+
+  .details-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .details-content {
+    color: rgb(3, 3, 3);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .details-content-item {
+    padding: 20px;
+  }
+  .honbun{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 10px;
+    margin-top: 70px; /* ヘッダーの高さと同じマージンを設定 */
+    padding: 40px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(248, 157, 88);
+    box-shadow: 10px 10px 10px -10px rgb(255, 113, 4);
+  }
+  video{
+    width: 70vw;
+    margin: auto;
+  }
+  .honbun h1
+  {
+    font-size: 25px;
+    text-align: center;
+  }
+  .content img{
+    width: 25vw;
+  }
+  .content p{
+    margin-top: 40px;
+  }
+  .honbun a{
+    color: black;
+  }
+  .details-content-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
+  .school{
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+  }
+  /*フッター*/
+  footer{
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}

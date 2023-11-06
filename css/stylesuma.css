@@ -1,0 +1,509 @@
+@media only screen and (max-width: 480px) {
+  *{
+    margin: 0px;
+}
+main{
+  z-index: 90;
+}
+h2{
+  font-size: 24px;
+}
+#splash {
+  /*fixedで全面に固定*/
+position: fixed;
+z-index: 10000;
+width: 100%;
+height: 100%;
+background:#203a82;
+text-align:center;
+color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 999;
+width: 100%;
+transform: translate(-50%, -50%);
+color: #fff;
+}
+/*画面遷移アニメーション*/
+.splashbg{
+    display: none;
+}
+@keyframes PageAnime{
+  0% {
+    transform-origin:left;
+    transform:scaleX(0);
+  }
+  50% {
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+  50.001% {
+    transform-origin:right;
+  }
+  100% {
+    transform-origin:right;
+    transform:scaleX(0);
+  }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container{
+  opacity: 0;/*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container{
+  animation-name:PageAnimeAppear;
+  animation-duration:1s;
+  animation-delay: 0.8s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+.sumamenu{
+  display: flex;
+}
+.menu{
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background:#d3d3d3;
+}
+/*ヘッダー*/
+header{
+  position: fixed;
+  z-index: 9999;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display:table;
+    background:#d3d3d3;
+}
+header h1{
+  font-size: 20px;
+  }
+  .header{
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .headermenu{
+    display: none;
+  }
+header h1 a{
+  text-decoration:none;
+  color: #333;
+}
+header h3 a{
+  font-size: 12px;
+    text-decoration:none;
+  color: #333;
+}
+.hanmenu{
+  margin-top: 8px;
+  z-index: 9999;
+  position: fixed;
+}
+.menu{z-index: 9990;
+  width: 100vw;
+  background-color: #d3d3d3;
+}
+.openbtn1{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  position: fixed;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: #d3d3d3;
+    width: 50px;
+    height:50px;
+}
+
+/*ボタン内側*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: rgb(0, 0, 0);
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}.openbtn1{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+
+/*ボタン内側*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: rgb(0, 0, 0);
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.details-summary {
+  position: relative;
+  display: block;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details-summary.layer1 {
+  background-color: #d3d3d3;
+}
+
+.details-summary.layer2 {
+  background-color: #979797;
+}
+
+details-summary.layer3 {
+  background-color: #5c5c5c;
+}
+
+details-summary:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.details-summary .btn {
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  width: 18px;
+  height: 18px;
+  transform-origin: center center;
+  transition-duration: 0.2s;
+}
+
+.details-summary .btn:before,
+details-summary .btn:after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 18px;
+  height: 4px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  transform-origin: center center;
+}
+
+details-summary .btn:before {
+  width: 4px;
+  height: 18px;
+  top: 0;
+  left: 7px;
+}
+
+details-summary.is-active .btn {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+details-summary.is-active .btn:before {
+  content: none;
+}
+
+.details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-content {
+  color: rgb(3, 3, 3);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details-content-item {
+  padding: 20px;
+}
+
+details-content-item.layer3 {
+  background-color: #4cc0bc;
+}
+
+details-content-item.layer4 {
+  background-color: #19aea9;
+}
+
+details-content-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+/*スライドショー*/
+#slider{
+  width: 100%;
+  height: 80vh;
+}
+#slider h1{
+  font-size: 40px;
+  width: 450px;
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*制作物*/
+.seisakubutu{
+  position: relative;
+  z-index: 100;
+  height: 1100px;
+  padding-top: 5px;
+  padding-top: 40px;
+  background-color: orange;
+}
+.seisakusetu{
+  width: 300px;
+  height: 200px;
+  font-size: 18px;
+}
+.seisaku{
+  margin-top: 8px;
+}
+.seisaku img{
+  margin-right: 10px;
+  border-radius: 10px;
+}
+/*制作物の名前*/
+.naiyou{
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: 950px;
+  border-radius:30px;
+}
+.naiyoutyusin{
+  display: inline-block;
+}
+.seisakumatomari{
+  margin-right: 30px;
+  text-align: left;
+}
+.seisakumatomari a{
+  text-decoration:none;
+}
+.seisakumatomari2{
+  text-align: left;
+  margin-top: 50px;
+}
+.seisakumatomari2 a{
+  text-decoration:none;
+}
+#seisakuname{
+  margin-left: 15px;
+  border-bottom:5px solid rgb(0, 0, 0);
+  width: 150px;
+  font-size: 20px;
+}
+#seisakuname a{
+  color: #000000;
+}
+.seisakubutu h1{
+  border-left:10px solid rgb(0, 0, 0);
+  margin-left: 30px;
+  font-size: 35px;
+}
+#end{
+  margin-top: 30px;
+  text-align: right;
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;  
+}
+#end a{
+  color: black;
+}
+/*参加イベント*/
+.sankaibe{
+  height: 600px;
+  padding: 20px;
+  background-color: rgb(255, 133, 133);
+  text-align: center;
+}
+.tyusin{
+  display: inline-block;
+}
+.box{
+  display: flex;
+  width: 350px;
+  height: 570px;
+  overflow-x: scroll;
+}
+.content{
+  padding-top: 20px;
+  text-align: center;
+  width: 250px;
+  height: 540px;
+  flex-shrink: 0;
+  margin-right: 60px;
+  background-color: rgb(86, 189, 253);
+  border-radius:10px;
+}
+.content img{
+  border-radius: 10px;
+}
+.content p{
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.content div{
+  width: 230px;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  border-radius:20px;
+}
+#endp{
+  
+  text-align: right;
+}
+#endp a{
+  color: black;
+}
+.flex{
+  display: flex;
+  margin: auto;
+}
+.evb{
+  opacity: 0;
+}
+.sankaibe li{
+  list-style: none;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+.school{
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+}
+/*フッター*/
+footer{
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+  padding-bottom: 20px;
+}
+}
