@@ -1,7 +1,6 @@
 @media only screen and (max-width: 480px) {
   *{
     margin: 0px;
-   font-family: MS Sans Serif;
 }
 main{
   z-index: 90;
