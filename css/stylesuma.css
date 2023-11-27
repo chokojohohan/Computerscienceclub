@@ -129,7 +129,14 @@ header h3 a{
     width: 50px;
     height:50px;
 }
-
+.hanmenuhome{
+padding: 20px;
+}
+.hanmenuhomep{
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
 /*ボタン内側*/
 .openbtn1 span{
     display: inline-block;
