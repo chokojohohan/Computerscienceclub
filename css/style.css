@@ -8,7 +8,9 @@ main{
 h2{
   font-size: 24px;
 }
-
+a {text-decoration: none;
+  color: #000000;
+}
 #splash {
   /*fixedで全面に固定*/
 position: fixed;
@@ -369,8 +371,28 @@ nav li.has-child ul ul li a:active{
 }
 .seisakumatomari{
   margin-right: 30px;
+  height: 300px;
+  text-align: left;
+  border-radius:20px;
+}
+.seisakumatomari:hover{
+  transition: all 0.8s;
+  transform: translate(-8px,-8px);
+  background-color: #c2c2c2;
+  box-shadow: 8px 8px 0px 0 rgb(247, 208, 136);
+}.seisakumatomari2{
+  margin-right: 30px;
+  height: 300px;
+  border-radius:20px;
   text-align: left;
 }
+.seisakumatomari2:hover{
+  transition: all 0.8s;
+  transform: translate(-8px,-8px);
+  background-color: #c2c2c2;
+  box-shadow: 8px 8px 0px 0 rgb(247, 208, 136);
+}
+
 .seisakumatomari a{
   text-decoration:none;
 }
