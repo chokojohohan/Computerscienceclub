@@ -1,6 +1,7 @@
 @media screen and (min-width: 1201px) {
 *{
     margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*ヘッダー*/
