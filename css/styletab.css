@@ -352,7 +352,7 @@ a{
 .seisakubutu{
   position: relative;
   z-index: 100;
-  height: 1100px;
+  height: 600px;
   padding-top: 5px;
   padding-top: 40px;
   background-color: orange;
@@ -363,6 +363,7 @@ a{
   font-size: 18px;
 }
 .seisaku{
+  display: flex;
   margin-top: 8px;
 }
 .seisaku img{
@@ -371,27 +372,52 @@ a{
 }
 /*制作物の名前*/
 .naiyou{
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: white;
-  width: 90%;
+  width: 1060px;
   text-align: center;
   margin: auto;
   margin-top: 10px;
-  height: 950px;
+  height: 380px;
   border-radius:30px;
 }
 .naiyoutyusin{
   display: inline-block;
 }
+.naiyouyoko{
+  display: flex;
+}
 .seisakumatomari{
   margin-right: 30px;
+  height: 300px;
+  text-align: left;
+  border-radius:20px;
+}
+.seisakumatomari:hover{
+  transition: all 0.8s;
+  transform: translate(-8px,-8px);
+  background-color: #c2c2c2;
+  box-shadow: 8px 8px 0px 0 rgb(247, 208, 136);
+}.seisakumatomari2{
+  margin-right: 30px;
+  height: 300px;
+  border-radius:20px;
   text-align: left;
 }
+.seisakumatomari2:hover{
+  transition: all 0.8s;
+  transform: translate(-8px,-8px);
+  background-color: #c2c2c2;
+  box-shadow: 8px 8px 0px 0 rgb(247, 208, 136);
+}
+
 .seisakumatomari a{
   text-decoration:none;
 }
 .seisakumatomari2{
   text-align: left;
-  margin-top: 50px;
 }
 .seisakumatomari2 a{
   text-decoration:none;
@@ -410,9 +436,6 @@ a{
   margin-left: 30px;
   font-size: 35px;
 }
-    .naiyouyoko{
-        display:flex;
-    }
 #end{
   margin-top: 30px;
   text-align: right;
