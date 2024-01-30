@@ -410,6 +410,9 @@ a{
   margin-left: 30px;
   font-size: 35px;
 }
+    .seisakuyoko{
+        display:flex;
+    }
 #end{
   margin-top: 30px;
   text-align: right;
@@ -432,7 +435,7 @@ a{
 }
 .box{
   display: flex;
-  width: 350px;
+  width: 80vw;
   height: 570px;
   overflow-x: scroll;
 }
