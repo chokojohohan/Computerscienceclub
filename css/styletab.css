@@ -458,7 +458,7 @@ a{
 }
 .box{
   display: flex;
-  width: 80vw;
+  width: 700px;
   height: 570px;
   overflow-x: scroll;
 }
