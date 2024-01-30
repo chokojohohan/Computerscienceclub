@@ -19,7 +19,10 @@ background:#203a82;
 text-align:center;
 color:#fff;
 }
-
+a{
+ text-dictation:none;
+ color:brack;
+}
 /* Loadingバー中央配置　*/
 #splash_text {
 position: absolute;
