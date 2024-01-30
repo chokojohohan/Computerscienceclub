@@ -233,7 +233,7 @@ header h3 a{
 }
 .box{
   display: flex;
-  width: 730px;
+  width: 350px;
   height: 570px;
   overflow-x: scroll;
 }
@@ -269,11 +269,6 @@ header h3 a{
   
   text-align: right;
 }
- .evb{
-  text-decoration:none;
-   color: black;
-  
- }
 #endp a{
   color: black;
 }
@@ -287,7 +282,6 @@ header h3 a{
 .sankaibe li{
   list-style: none;
 }
-
 /*==================================================
 ふわっ
 ===================================*/
