@@ -523,14 +523,12 @@ footer{
   padding-bottom: 20px;
 }
 /*スクロールバー*/
-body{
-    /*スクロールバー非表示（IE・Edge）*/
+/*スクロールバー*/
+*{
     -ms-overflow-style: none;
-    /*スクロールバー非表示（Firefox）*/
     scrollbar-width: none;
 }
-body::-webkit-scrollbar{
-  /*スクロールバー非表示（Chrome・Safari）*/
+*::-webkit-scrollbar{
   display:none;
 }
 }
