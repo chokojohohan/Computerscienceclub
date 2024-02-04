@@ -3,6 +3,14 @@
     margin: 0px;
    font-family: 'Noto Sans JP', sans-serif;
   }
+ /*スクロールバー*/
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar{
+  display:none;
+}
   main{
     z-index: 90;
   }
